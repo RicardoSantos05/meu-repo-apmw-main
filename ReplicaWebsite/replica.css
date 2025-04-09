@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centers the navigation menu */
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    position: relative;
+}
+
+
+.logo {
+    position: absolute;
+    left: 20px; /* Moves the logo to the top-left */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Spaces out the menu items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li {
+    margin: 20px;
+}
+
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 18vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    width: 100%;
+}
+
+.highlight {
+    color: darkgoldenrod;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.see-catalog {
+    padding: 15px 40px;
+    font-size: 25px;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(0, 210, 0);
+    border: none;
+    cursor: pointer;
+    width: 300px; /* Largura do botão */
+    height: 300px; /* Altura do botão (igual à largura para ser um círculo) */
+    border-radius: 50%;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    height: 150px;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    min-height: 150px; /* Ajusta conforme necessário */
+    margin: 0 10px;
+    border-radius: 30px;
+}
+.explore-collection {
+    padding: 15px 30px;
+    font-size: 18px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    
+}
+.cta-buttons button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #0f0;
+    border: none;
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;  /* Centraliza verticalmente */
+    height: 50vh;  /* Define a altura da secção para ocupar metade da tela */
+    padding: 20px;
+}
+
+.about p {
+    max-width: 600px;  /* Limita a largura do texto */
+    text-align: center;  /* Centraliza o texto */
+    font-size: 20px;  /* Ajusta o tamanho do texto */
+    line-height: 1.6;  /* Melhora a legibilidade */
+}
+
+.about, .sale, .faq, .contact {
+    padding: 50px 20px;
+}
+
+.clients {
+    font-size: 30px;
+    padding: 200px 520px;
+}
+
+.sale {
+
+    font-size: 30px;
+}
+
+.pattern-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pattern-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.circle, .square {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: #2a455c; /* Cor chamativa para destacar */
+
+}
+
+.square {
+    border-radius: 10px;
+    background-color: #2a455c; /* Cor chamativa para destacar */
+
+}
+
+.sale-box {
+    background-color: #2a455c; /* Cor chamativa para destacar */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha itens no início (esquerda) */
+    justify-content: flex-start; /* Garante que o conteúdo comece do topo */
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.sale-box p {
+    margin: 0;
+    /* Isso garante que o texto fique no canto superior esquerdo */
+}
+
+.sale-box button {
+    background-color: transparent; /* Fundo transparente */
+    color: #f6f6f6;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: auto; /* Faz com que o botão se mova para o final da caixa */
+}
+
+.faq {
+    max-width: 600px; /* Limita a largura */
+    margin: 0 auto; /* Centraliza na página */
+    text-align: left;
+}
+
+.faq details {
+    background: #222;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.container_LT {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center; /* Alinha os itens centralizados */
+
+    gap: 25px;
+    padding: 30px;
+    font-size: 30px;
+    color: white;
+}
+
+.header_LT {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o texto horizontalmente */
+
+}
+
+.boxes_LT {
+    display: flex;
+    gap: 20px;
+    width: 1000px;
+    height: 450px;
+}
+
+.box_LT {
+    border-radius: 30px;
+    flex: 1; /* Cada caixa vai ocupar uma parte igual da largura */
+    background-color: #006480; /* Cor de fundo das caixas */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    color: white;
+}
+
+.box_LT p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.contact-box p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #f6f6f6;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.send-button {
+    background-color: transparent;
+    color: #f6f6f6;
+    border: 2px solid #f6f6f6;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: auto; /* Faz o botão "Send" ficar no fundo */
+}
+
+
+
+footer {
+    padding: 20px;
+    background: #111;
+}
+

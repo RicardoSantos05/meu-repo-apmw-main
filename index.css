@@ -1,0 +1,187 @@
+body {
+    background-image: url('files/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    background: rgba(131, 131, 131, 0.6);
+    color: white;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: rgba(0, 0, 0, 0.6);
+    color: orange;
+}
+
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: darkcyan;
+}
+
+p {
+    font-size: 16px;
+}
+h1 {
+    color: darkcyan;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Verdana', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+h2 {
+    color: darkcyan;
+    font-size: 24px;
+    border-bottom: 2px solid orange;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+}
+
+a {
+    color: darkblue  ;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkgoldenrod;
+}
+input, textarea, select {
+    width: 450px; /* Define um tamanho fixo */
+    padding: 10px;
+    margin-top: 5px;
+    border: 3px solid #bdb3b3;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block; /* Garante que cada input fica numa nova linha */
+}
+
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgoldenrod;
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    z-index: -1;
+}
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.video-container {
+    position: fixed;  
+    right: 100px;  
+    top: 60%;  
+    transform: translateY(-50%);
+    width: 550px;  
+    text-align: left; /* Centraliza o texto */
+}
+
+.video-text {
+    position: relative;  
+    top: 0px;  /* Ajusta para ficar acima do vídeo */
+    left: 50%;
+    transform: translateX(-50%);
+    color: darkcyan;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18;
+    font-weight: bold;
+}
+
+video {
+    width: 100%; /* O vídeo ocupa toda a largura do container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.audio-container {
+    position: fixed;
+    right: 335px;
+    top: 30%; /* Mantém acima do vídeo */
+    transform: translateY(-50%);
+    width: 320px;
+    text-align: left;
+}
+
+/* Estiliza o título do áudio */
+.audio-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: darkcyan;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Ajusta o player de áudio */
+audio {
+    width: 175%;
+}
+
+.multimedia-title {
+    position: fixed;
+    right: 498px;        /* Distância da borda direita */
+    top: 20%;           /* Posição logo abaixo do topo */
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 100px;
+    font-weight: bold;
+    border-radius: 15px;
+    text-align: center;
+}
