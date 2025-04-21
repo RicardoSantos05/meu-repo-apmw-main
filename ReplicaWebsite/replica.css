@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 
 header {
     display: flex;
-    justify-content: center; /* Centers the navigation menu */
+    justify-content: center;
     align-items: center;
     padding: 20px;
     background-color: #111;
@@ -23,7 +23,7 @@ header {
 
 .logo {
     position: absolute;
-    left: 20px; /* Moves the logo to the top-left */
+    left: 20px; 
     top: 50%;
     transform: translateY(-50%);
     font-size: 24px;
@@ -33,7 +33,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px; /* Spaces out the menu items */
+    gap: 30px;
 }
 
 nav ul li a {
@@ -77,8 +77,44 @@ nav ul li {
     background-color: rgb(0, 210, 0);
     border: none;
     cursor: pointer;
-    width: 300px; /* Largura do botão */
-    height: 300px; /* Altura do botão (igual à largura para ser um círculo) */
+    width: 300px;
+    height: 300px; 
+    border-radius: 50%;
+}
+
+.decorated-button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 40px;
+}
+
+.decor-shape {
+    width: 300px;
+    height: 300px;
+    background-color: #2a455c;
+}
+
+.decor-shape.circle {
+    border-radius: 50%;
+}
+
+.decor-shape.square {
+    border-radius: 10px;
+}
+
+
+.see-catalog {
+    padding: 15px 40px;
+    font-size: 25px;
+    color: #fff;
+    background-color: rgb(0, 210, 0);
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 
@@ -96,9 +132,9 @@ nav ul li {
     background-color: #222;
     color: white;
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    min-height: 150px; /* Ajusta conforme necessário */
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
     margin: 0 10px;
     border-radius: 30px;
 }
@@ -121,17 +157,17 @@ nav ul li {
 
 .about {
     display: flex;
-    justify-content: center;  /* Centraliza horizontalmente */
-    align-items: center;  /* Centraliza verticalmente */
-    height: 50vh;  /* Define a altura da secção para ocupar metade da tela */
+    justify-content: center; 
+    align-items: center;  
+    height: 50vh;  
     padding: 20px;
 }
 
 .about p {
-    max-width: 600px;  /* Limita a largura do texto */
-    text-align: center;  /* Centraliza o texto */
-    font-size: 20px;  /* Ajusta o tamanho do texto */
-    line-height: 1.6;  /* Melhora a legibilidade */
+    max-width: 600px;  
+    text-align: center; 
+    font-size: 20px;  
+    line-height: 1.6; 
 }
 
 .about, .sale, .faq, .contact {
@@ -139,13 +175,30 @@ nav ul li {
 }
 
 .clients {
-    font-size: 30px;
+    font-size: 50px;
     padding: 200px 520px;
+}
+
+.rotated-rectangles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 40px;
+    flex-wrap: nowrap;
+}
+
+.rectangle {
+    flex: 1;
+    margin: 0 10px;
+    height: 300px;
+    background-color: #2a455c;
+    border-radius: 10px;
 }
 
 .sale {
 
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .pattern-container {
@@ -172,22 +225,22 @@ nav ul li {
 
 .circle {
     border-radius: 50%;
-    background-color: #2a455c; /* Cor chamativa para destacar */
+    background-color: #2a455c; 
 
 }
 
 .square {
     border-radius: 10px;
-    background-color: #2a455c; /* Cor chamativa para destacar */
+    background-color: #2a455c; 
 
 }
 
 .sale-box {
-    background-color: #2a455c; /* Cor chamativa para destacar */
+    background-color: #2a455c;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha itens no início (esquerda) */
-    justify-content: flex-start; /* Garante que o conteúdo comece do topo */
+    align-items: flex-start; 
+    justify-content: flex-start;
     padding: 25px;
     color: white;
     font-weight: bold;
@@ -196,23 +249,31 @@ nav ul li {
 
 .sale-box p {
     margin: 0;
-    /* Isso garante que o texto fique no canto superior esquerdo */
+
 }
 
 .sale-box button {
-    background-color: transparent; /* Fundo transparente */
+    background-color: transparent;
     color: #f6f6f6;
     padding: 5px 10px;
     cursor: pointer;
-    margin-top: auto; /* Faz com que o botão se mova para o final da caixa */
+    margin-top: auto; 
 }
 
+
+
 .faq {
-    max-width: 600px; /* Limita a largura */
-    margin: 0 auto; /* Centraliza na página */
+    max-width: 600px;
+    margin: 0 auto;
     text-align: left;
 }
 
+.faq h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
 .faq details {
     background: #222;
     padding: 15px;
@@ -223,43 +284,40 @@ nav ul li {
 .container_LT {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    align-items: center; /* Alinha os itens centralizados */
-
+    align-items: center; 
     gap: 25px;
-    padding: 30px;
+    padding: 45px;
     font-size: 30px;
     color: white;
+    width: 100%;
 }
 
 .header_LT {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
-    text-align: center; /* Centraliza o texto horizontalmente */
-
+    text-align: center; 
 }
 
 .boxes_LT {
     display: flex;
-    gap: 20px;
-    width: 1000px;
-    height: 450px;
+    gap: 25px;
+    width: 100%;
+    height: 750px;
 }
 
 .box_LT {
     border-radius: 30px;
-    flex: 1; /* Cada caixa vai ocupar uma parte igual da largura */
-    background-color: #006480; /* Cor de fundo das caixas */
+    flex: 1;
+    background-color: #2a455c; 
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    justify-content: flex-start;
     color: white;
 }
 
 .box_LT p {
-    margin: 0;
     font-size: 20px;
 }
 
@@ -267,38 +325,135 @@ nav ul li {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
     height: 100%;
-}
+    background-color: #2a455c;
+    flex: 1; 
 
+}
 .contact-box p {
     margin: 0;
     font-size: 20px;
+
 }
 
 .contact-box input,
 .contact-box textarea {
-    margin-top: 10px;
-    padding: 10px;
+    margin: 10px 0;
+    padding: 25px;
     width: 100%;
-    background-color: #f6f6f6;
-    color: black;
-    border: 1px solid #ccc;
+    background-color: #fdfeff1e;
+    max-width: 400px;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.contact-box input::placeholder,
+.contact-box textarea::placeholder {
+    color: white;
+    opacity: 1; /
 }
 
 .send-button {
     background-color: transparent;
     color: #f6f6f6;
-    border: 2px solid #f6f6f6;
-    padding: 10px 20px;
+    border: 2px solid #2a455c;
     cursor: pointer;
     align-self: flex-start;
-    margin-top: auto; /* Faz o botão "Send" ficar no fundo */
+    margin-top: auto;
+    font-size: 30px;
+    align-content: left;
+    margin-bottom: 55px;
+    margin-left: 35px;
+    font-weight: bold;
 }
-
-
 
 footer {
     padding: 20px;
     background: #111;
 }
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 80px;
+    background-color: #111;
+    color: white;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    min-width: 160px;
+    text-align: left;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo-section .logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    background-color: #1c1c1c;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background-color: #555;
+  }
+  
+  .circle-up {
+    background: #000;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 20px;
+  }
+
 

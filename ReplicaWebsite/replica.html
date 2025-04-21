@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elegant</title>
     <link rel="stylesheet" href="replica.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Elegant</div>
+                <div class="logo">Elegant</div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">New Collection</a></li>
@@ -22,8 +24,14 @@
     
     <section class="hero">
         <h1>Elegant</h1>
-        <div class="button-container">
+        <div class="decorated-button-row">
+            <div class="decor-shape circle"></div>
+            <div class="decor-shape square"></div>
+        
             <button class="see-catalog">See Catalog</button>
+        
+            <div class="decor-shape square"></div>
+            <div class="decor-shape circle"></div>
         </div>
         <div class="info-boxes">
             <div class="box">Here you will find everything you need. Our collection is constantly expanding to suit your unique style.</div>
@@ -42,6 +50,15 @@
         <h2>We have already more than 12k clients</h2>
     </section>
 
+    <div class="rotated-rectangles">
+        <div class="rectangle" style="transform: rotate(5deg);"></div>
+        <div class="rectangle" style="transform: rotate(-8deg);"></div>
+        <div class="rectangle" style="transform: rotate(10deg);"></div>
+        <div class="rectangle" style="transform: rotate(-4deg);"></div>
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
     <section class="sale">
         <h2>Get Ready to Save Big!</h2>
     </section>
@@ -58,14 +75,16 @@
                 </div>
             </div>
             <div class="pattern-row">
-                <div class="circle"></div>
                 <div class="square"></div>
                 <div class="circle"></div>
                 <div class="square"></div>
+                <div class="circle"></div>
             </div>
     </div>
     </section>
     
+<br><br><br><br><br><br><br><br><br><br>
+
     <section class="faq"> 
         <h2>FAQ</h2>
         <details>
@@ -110,17 +129,61 @@
             <div class="box_LT">
             </div>
             <div class="box contact-box">
-                <p>Contact Us</p>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
                 <button class="send-button">Send</button>
             </div>
         </div>
     </div>
     
+    <br>
+    <br>
+    
     <footer>
-        <p>Elegant &copy; 2025</p>
-    </footer>
+        <div class="footer-container">
+            <div class="footer-section logo-section">
+                <h2 class="footer-logo">Elegant</h2>
+                <p>Elevate Your Style Today!</p>
+              </div>
+      
+          <div class="footer-section">
+            <h3>Pages</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">New Collection</a></li>
+              <li><a href="#">Catalog</a></li>
+              <li><a href="#">Delivery</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Legal Information</h3>
+            <ul>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fas fa-envelope"></i>
+              </a>
+              <a href="#"><i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#"><i class="fab fa-instagram"></i>
+              </a>
+              <a href="#"><i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+      
+          <div class="footer-section back-to-top">
+            <a href="#"><div class="circle-up">↑</div></a>
+          </div>
+        </div>
+      </footer>
+
 </body>
 </html>
